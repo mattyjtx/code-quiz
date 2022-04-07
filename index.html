@@ -11,19 +11,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">question</div>
-            <div id="answer-btns" class="btn-grid">
-                <button class="btn">answer 1</button>
-                <button class="btn">answer 2</button>
-                <button class="btn">answer 3</button>
-                <button class="btn">answer 4</button>
-            </div>
+    <header>
+        <div>
+            <a href="./highscores.html">Highscores Page</a>
         </div>
-        <div class="controls">
+        <div>
+            <h1>Code Quiz</h1>
+        </div>
+        <div>
+            <p>Time: <span id="timer">00</span></p>
+        </div>
+    </header>
+    <div class="container">
+        <div id="start-container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat qui nam sequi, veritatis molestiae modi temporibus doloremque porro, dolorem eum tempora, sapiente nostrum laudantium! Cum nulla assumenda odit modi ullam.</p>
             <button id="start-btn" class="start-btn">start</button>
-            <button id="next-btn" class="next-btn hide">next</button>
+        </div>
+        <div id="question-container" class="hide">
+            <h2 id="questoin-title"></h2>
+            <div id="answer-btns" class="btn-grid"></div>
+        </div>
+        <div id="end-container" class="hide">
+            <h5>Your score is <span id="score"></span></h5>
+            <input type="text" id="initials">
+            <button id="submit-score" class="next-btn">Submit</button>
         </div>
     </div>
     <script src="script.js"></script>

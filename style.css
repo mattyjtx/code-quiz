@@ -1,20 +1,34 @@
-/* * , {
+
+* {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    
-}  */
+}
+
 
 body {
-    padding: 0;
-    margin: 0;  
+   
+    padding: 1rem;
+    margin: 2rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #FFF8F3;
+    background-color:#FFF8F3 ;
+
 
 }
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+
 
 .container {
     width: 800px;
@@ -58,6 +72,3 @@ body {
     align-items: center;
 }
 
-.hide {
-    display: none;
-}
