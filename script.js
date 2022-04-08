@@ -31,11 +31,20 @@ function beginGame() {
 }
 
 function finishGame() { 
-  questionContainerEl.innerHTML = "game over :o";
+//   questionContainerEl.innerHTML = "game over :o";
   clearInterval(timerInterval);
 
+  localStorage.setItem('time' , time);
+  //localstorage.getitem('time')
+
+    generateScores();
 }
 
+function generateScores() {
+   var score = localStorage.getItem('time');
+   console.log('score');
+    questionContainerEl.innerHTML = "game over :'( your score is " + score
+}
 function showQuestion(){
     // questionElement.innerText = question.question;
     // question.answers.forEach(answer => {

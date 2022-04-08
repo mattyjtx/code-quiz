@@ -9,9 +9,9 @@ body {
    
     padding: 1rem;
     margin: 2rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
     width: 100vw;
     height: 100vh;
     background-color:#FFF8F3 ;
@@ -21,6 +21,7 @@ body {
 
 header {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
 }
@@ -31,8 +32,14 @@ header {
 
 
 .container {
-    width: 800px;
-    max-width: 80%;
+   position: fixed;
+   top: 30%;
+   left: 36%;
+   
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
